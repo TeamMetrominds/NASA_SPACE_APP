@@ -1,0 +1,127 @@
+{
+  "rules": [
+    {
+      "id": "high_heat_high_vulnerability",
+      "name": "High Heat & High Vulnerability",
+      "conditions": {
+        "lst": {"min": 35},
+        "vulnerability": {"min": 0.7}
+      },
+      "priority": 1,
+      "strategies": [
+        "Implement urban cooling strategies",
+        "Increase green spaces and tree canopy",
+        "Install cool roof programs",
+        "Create water features and fountains",
+        "Improve building insulation",
+        "Develop heat emergency response plans"
+      ],
+      "description": "Areas with high surface temperature and high vulnerability require immediate cooling interventions"
+    },
+    {
+      "id": "high_heat_moderate_vulnerability",
+      "name": "High Heat & Moderate Vulnerability",
+      "conditions": {
+        "lst": {"min": 35},
+        "vulnerability": {"min": 0.4, "max": 0.7}
+      },
+      "priority": 2,
+      "strategies": [
+        "Increase vegetation coverage",
+        "Implement cool roof initiatives",
+        "Create shaded pedestrian areas",
+        "Improve urban ventilation",
+        "Monitor heat stress indicators"
+      ],
+      "description": "Areas with high temperature but moderate vulnerability need preventive cooling measures"
+    },
+    {
+      "id": "moderate_heat_high_vulnerability",
+      "name": "Moderate Heat & High Vulnerability",
+      "conditions": {
+        "lst": {"min": 30, "max": 35},
+        "vulnerability": {"min": 0.7}
+      },
+      "priority": 2,
+      "strategies": [
+        "Strengthen community resilience",
+        "Improve access to cooling centers",
+        "Enhance early warning systems",
+        "Develop adaptive capacity programs",
+        "Create social support networks"
+      ],
+      "description": "Areas with moderate temperature but high vulnerability need resilience building"
+    },
+    {
+      "id": "moderate_conditions",
+      "name": "Moderate Conditions",
+      "conditions": {
+        "lst": {"min": 25, "max": 35},
+        "vulnerability": {"min": 0.3, "max": 0.7}
+      },
+      "priority": 3,
+      "strategies": [
+        "Maintain current urban planning",
+        "Monitor environmental indicators",
+        "Plan for future climate adaptation",
+        "Support sustainable development",
+        "Enhance community engagement"
+      ],
+      "description": "Areas with moderate conditions should focus on sustainable maintenance and future planning"
+    },
+    {
+      "id": "low_heat_low_vulnerability",
+      "name": "Low Heat & Low Vulnerability",
+      "conditions": {
+        "lst": {"max": 30},
+        "vulnerability": {"max": 0.4}
+      },
+      "priority": 4,
+      "strategies": [
+        "Preserve existing green infrastructure",
+        "Maintain sustainable practices",
+        "Support community initiatives",
+        "Plan for long-term resilience",
+        "Document best practices"
+      ],
+      "description": "Areas with low temperature and low vulnerability should focus on preservation and best practices"
+    },
+    {
+      "id": "high_vegetation_areas",
+      "name": "High Vegetation Areas",
+      "conditions": {
+        "ndvi": {"min": 0.5}
+      },
+      "priority": 5,
+      "strategies": [
+        "Protect and expand green spaces",
+        "Implement forest management plans",
+        "Create biodiversity corridors",
+        "Develop eco-tourism opportunities",
+        "Monitor ecosystem health"
+      ],
+      "description": "Areas with high vegetation should focus on conservation and ecosystem services"
+    },
+    {
+      "id": "high_built_up_areas",
+      "name": "High Built-up Areas",
+      "conditions": {
+        "ndbi": {"min": 0.3}
+      },
+      "priority": 3,
+      "strategies": [
+        "Implement smart city technologies",
+        "Improve energy efficiency",
+        "Enhance public transportation",
+        "Create mixed-use developments",
+        "Develop green building standards"
+      ],
+      "description": "Built-up areas should focus on smart city development and sustainability"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "description": "Urban planning strategy rules based on geospatial analysis",
+    "last_updated": "2024-01-01"
+  }
+}
